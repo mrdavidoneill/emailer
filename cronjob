@@ -7,4 +7,4 @@
 # │ │ │ │ │
 # │ │ │ │ │
 # * * * * *  command_to_execute
-*/10 * * * * PATHTO/cronjobs/env/bin/python PATHTO/cronjobs/emailer/run.py
+*/10 * * * * ~/Cronjobs/env/bin/python ~/Cronjobs/emailer/run.py
