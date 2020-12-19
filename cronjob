@@ -7,4 +7,4 @@
 # │ │ │ │ │
 # │ │ │ │ │
 # * * * * *  command_to_execute
-*/10 * * * * ~/Cronjobs/env/bin/python ~/Cronjobs/emailer/run.py
+*/10 * * * * /home/<USERNAME>/Cronjobs/emailer/env/bin/python /home/<USERNAME>/Cronjobs/emailer/run.py
