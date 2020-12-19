@@ -1,6 +1,7 @@
 import logging
 import logging.handlers
 import time
+import os
 
 ######### DEBUG LEVELS ##########
 CONSOLE_LEVEL = logging.DEBUG
@@ -21,8 +22,10 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 # Log to file
+filepath = os.path.join(os.path.dirname(__file__), *
+                        ["logs", "emailchecker.log"])
 fh = logging.handlers.RotatingFileHandler(
-    'emailer/logs/emailchecker.log', maxBytes=1024*2, backupCount=1)
+    filepath, maxBytes=1024*2, backupCount=1)
 fh.setLevel(FILE_LEVEL)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
